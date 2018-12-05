@@ -1,0 +1,24 @@
+{
+  "title": "Docker Hub to RSS converter",
+  "name": "dockerhub-to-rss",
+  "description": "Runs a local web server to convert Docker Hub tags for specific projects into RSS format.",
+  "author": "Wladimir Palant",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/palant/docker-to-rss.git"
+  },
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^5.3.0"
+  },
+  "scripts": {
+    "test": "eslint *.js",
+    "start": "node server.js"
+  }
+}
